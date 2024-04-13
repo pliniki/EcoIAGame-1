@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#142A49"
+    tools:context=".Tela9">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="355dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/poppins"
+        android:text="De acordo com as informações apresentadas no vídeo, selecione o melhor destino para os coletores de plástico."
+        android:textColor="#E4E4E4"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/garbageMarron2"
+        android:layout_width="85dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="320dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/brown_garbage_collector" />
+
+    <ImageView
+        android:id="@+id/garbageGreen2"
+        android:layout_width="86dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/green_garbage_collector" />
+
+    <ImageView
+        android:id="@+id/garbageRed2"
+        android:layout_width="86dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/garbageMarron2"
+        app:srcCompat="@drawable/red_garbage_collector" />
+
+    <ImageView
+        android:id="@+id/garbageWhite2"
+        android:layout_width="80dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/garbageGreen2"
+        app:srcCompat="@drawable/white_garbage_collector" />
+</androidx.constraintlayout.widget.ConstraintLayout>

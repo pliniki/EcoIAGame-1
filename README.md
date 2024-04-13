@@ -40,7 +40,7 @@ O projeto Eco IA Game tem a missão de, por meio da gameficação, ajudar na tra
 
 <b>Front-end</b>
 
-- Android Studio; e 
+- Android Studio; e
 - Figma.
 
 <b>Back-end</b>
@@ -60,8 +60,8 @@ O projeto Eco IA Game tem a missão de, por meio da gameficação, ajudar na tra
 
 1- Para abrir este projeto você necessita fazer a instalção das seguintes ferramentas:
 
-- <a href="https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQjw2uiwBhCXARIsACMvIU1GVQCo_wPJf2YdcSfEj22uxcBZSt8uQJVw6qJXkUsINjMRQcwj_ScaAsvwEALw_wcB&gclsrc=aw.ds&hl=pt-br">Android Studio Iguana | 2023.2.1</a><br> 
-- <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">Java version "17.0.1" 2021-10-19 LTS</a><br> 
+- <a href="https://developer.android.com/studio?gad_source=1&gclid=Cj0KCQjw2uiwBhCXARIsACMvIU1GVQCo_wPJf2YdcSfEj22uxcBZSt8uQJVw6qJXkUsINjMRQcwj_ScaAsvwEALw_wcB&gclsrc=aw.ds&hl=pt-br">Android Studio Iguana | 2023.2.1</a><br>
+- <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">Java version "17.0.1" 2021-10-19 LTS</a><br>
 
 <b>Outras configurações</b>
 
