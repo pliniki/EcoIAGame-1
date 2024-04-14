@@ -11,23 +11,33 @@ import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Tela6 extends AppCompatActivity {
 
     private View white;
+    View imageView3;
+    View imageView4;
+    View imageView5;
+    View imageView6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela6);
 
-        findViewById(R.id.shadow).setOnLongClickListener(new MyOnLongClickListener());
+        imageView3 = findViewById(R.id.imageView3);
+        imageView4 = findViewById(R.id.imageView4);
+        imageView5 = findViewById(R.id.imageView5);
+        imageView6 = findViewById(R.id.imageView6);
 
+       findViewById(R.id.shadow).setOnLongClickListener(new MyOnLongClickListener());
 
         findViewById(R.id.topleft).setOnDragListener(new MyOnDragListener(1));
         findViewById(R.id.topright).setOnDragListener(new MyOnDragListener(2));
         findViewById(R.id.bottomleft).setOnDragListener(new MyOnDragListener(3));
         findViewById(R.id.bottomright).setOnDragListener(new MyOnDragListener(4));
+
         white = findViewById(R.id.bottomright);
 
 
@@ -64,17 +74,39 @@ public class Tela6 extends AppCompatActivity {
                     return(false);
                 case DragEvent.ACTION_DRAG_ENTERED:
 
-                    v.setBackgroundColor(Color.YELLOW);
+                    Log.i("Script", num + " - ACTION_DRAG_ENTERED");
+                    v.setBackgroundColor(Color.rgb(20,42,73));
 
+                    // Verifique se o item arrastado é um ImageView
+                    View draggedView = (View) event.getLocalState();
+                    if (draggedView instanceof ImageView) {
+                        ImageView imageView = (ImageView) draggedView;
+
+                        // Verifique se o ImageView tem uma imagem definida
+                        if (imageView.getDrawable() != null) {
+                            // Verifique em qual LinearLayout o ImageView está sendo arrastado
+                            if (v.getId() == R.id.topleft) {
+                                Intent intent = new Intent(Tela6.this, Tela6D.class);
+                                startActivity(intent);
+                            } else if (v.getId() == R.id.topright) {
+                                Intent intent = new Intent(Tela6.this, Tela6D.class);
+                                startActivity(intent);
+                            } else if (v.getId() == R.id.bottomleft) {
+                                Intent intent = new Intent(Tela6.this, Tela6D.class);
+                                startActivity(intent);
+                            } else if (v.getId() == R.id.bottomright) {
+                                Intent intent = new Intent(Tela6.this, Tela7.class);
+                                startActivity(intent);
+                            }
+                        }
+                    }
                     break;
                 case DragEvent.ACTION_DRAG_LOCATION:
                     Log.i("Script", 2+" - ACTION_DRAG_LOCATION");
-                    Intent intent = new Intent(Tela6.this, Tela6B.class);
-                    startActivity(intent);
                     break;
                 case DragEvent.ACTION_DRAG_EXITED:
                     Log.i("Script", num+" - ACTION_DRAG_EXITED");
-                    v.setBackgroundColor(Color.BLUE);
+                    v.setBackgroundColor(Color.rgb(255, 255, 255));
                     break;
                 case DragEvent.ACTION_DROP:
                     Log.i("Script", num+" - ACTION_DROP");
@@ -92,8 +124,8 @@ public class Tela6 extends AppCompatActivity {
                     break;
 
             }
-            /*
-            switch(action){
+
+            /*switch(action){
                 case DragEvent.ACTION_DRAG_STARTED:
                     Log.i("Script", num+" - ACTION_DRAG_STARTED");
                     if(event.getClipDescription().hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN)){
@@ -127,11 +159,14 @@ public class Tela6 extends AppCompatActivity {
                     v.setBackgroundColor(Color.rgb(255,255,255));
 
                     break;
-            }
-            */
+            }*/
+
             return true;
         }
     }
+
+
+
 
 
 }

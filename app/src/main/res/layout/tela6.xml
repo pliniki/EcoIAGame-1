@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#009688">
+    android:background="#142A49">
 
 
     <LinearLayout
@@ -12,13 +13,13 @@
         android:layout_gravity="center|clip_vertical|left"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
-        android:background="#0000ff">
+        android:background="#142A49">
 
         <ImageView
             android:id="@+id/shadow"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bottle" />
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/bottle" />
     </LinearLayout>
 
     <LinearLayout
@@ -28,13 +29,13 @@
         android:layout_gravity="right|top"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:background="#0000ff">
+        android:background="#142A49">
 
         <ImageView
-            android:id="@+id/img1"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/brown_garbage_collector" />
+            app:srcCompat="@drawable/brown_garbage_collector" />
     </LinearLayout>
 
     <LinearLayout
@@ -44,13 +45,13 @@
         android:layout_gravity="right|top"
         android:layout_marginTop="195dp"
         android:layout_marginRight="20dp"
-        android:background="#0000ff">
+        android:background="#142A49">
 
         <ImageView
-            android:id="@+id/img2"
+            android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/green_garbage_collector" />
+            app:srcCompat="@drawable/green_garbage_collector" />
     </LinearLayout>
 
     <LinearLayout
@@ -60,13 +61,13 @@
         android:layout_gravity="right|top"
         android:layout_marginTop="375dp"
         android:layout_marginRight="20dp"
-        android:background="#0000ff">
+        android:background="#142A49">
 
         <ImageView
-            android:id="@+id/img3"
+            android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/red_garbage_collector" />
+            app:srcCompat="@drawable/red_garbage_collector" />
     </LinearLayout>
 
     <LinearLayout
@@ -76,13 +77,13 @@
         android:layout_gravity="right|top"
         android:layout_marginTop="555dp"
         android:layout_marginRight="20dp"
-        android:background="#0000ff">
+        android:background="#142A49">
 
         <ImageView
-            android:id="@+id/img4"
+            android:id="@+id/imageView6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/white_garbage_collector" />
+            app:srcCompat="@drawable/white_garbage_collector" />
     </LinearLayout>
 
 </FrameLayout>

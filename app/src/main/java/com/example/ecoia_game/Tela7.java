@@ -21,7 +21,7 @@ public class Tela7 extends AppCompatActivity {
         botaoVoltar4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(Tela7.this, MainActivity.class);
+                Intent in = new Intent(Tela7.this, Tela6.class);
                 startActivity(in);
             }
         });
