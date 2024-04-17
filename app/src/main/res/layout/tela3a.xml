@@ -4,15 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tela3a">
+    tools:context=".Tela3a"
+    android:background="@drawable/cenario3">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="572dp"
-        android:layout_height="610dp"
-        app:srcCompat="@drawable/cenario3"
-        tools:layout_editor_absoluteX="-112dp"
-        tools:layout_editor_absoluteY="-35dp" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -20,18 +14,23 @@
         android:layout_height="191dp"
         android:rotation="-15"
         android:rotationX="-6"
-        app:srcCompat="@drawable/cenario4"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="59dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391"
+        app:srcCompat="@drawable/cenario4" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonIniciar"
         android:layout_width="189dp"
         android:layout_height="56dp"
+        android:layout_marginTop="84dp"
         android:text="Iniciar"
         android:textSize="20sp"
         android:textStyle="bold"
         app:backgroundTint="#37773A"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 </androidx.constraintlayout.widget.ConstraintLayout>

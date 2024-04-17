@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         botao.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(MainActivity.this, Tela2.class);
+                Intent in = new Intent(MainActivity.this, Tela1.class);
                 startActivity(in);
             }
         });
